@@ -1,0 +1,39 @@
+{
+	"name": "s3_fdw",
+	"abstract": "foreign-data wrapper for Amazon S3",
+	"description": "This module provides reading files located in Amazon S3 privately, using COPY mechanism.",
+	"version": "0.1.0",
+	"maintainer": "Hitoshi Harada <umi.tanuki@gmail.com>",
+	"license": "postgresql",
+	"provides": {
+		"s3_fdw": {
+			"abstract": "fdw for Amazon S3",
+			"version": "0.1.0",
+			"file": "s3_fdw.sql",
+			"docfile": "doc/s3_fdw.md"
+		}
+	},
+	"resources": {
+		"bugtracker": {
+			"web": "http://github.com/umitanuki/s3_fdw/issues/"
+		},
+		"repository": {
+			"url": "git://github.com/umitanuki/s3_fdw.git",
+			"web": "http://github.com/umitanuki/s3_fdw",
+			"type": "git"
+		}
+	},
+	"release_status": "unstable",
+	"meta-spec": {
+		"version": "1.0.0",
+		"url": "http://pgxn.org/meta/spec.txt"
+	},
+	"tags": [
+		"fdw",
+		"web",
+		"internet",
+		"amazon",
+		"cloud",
+		"bulkload"
+	]
+}
